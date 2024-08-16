@@ -1,0 +1,134 @@
+/* FONTS */
+
+.news-cycle-regular {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news-cycle-bold {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* TEXT STYLES */
+
+.page-header {
+    font-family: "News Cycle", sans-serif;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+
+/* MONTH AND YEAR SELECT  STYLES */
+
+
+select {
+    appearance: none;
+    /* remove default appearance set by the browser */
+    outline: none;
+    /* remove the outline shown on focus */
+    cursor: pointer;
+    /* change the mouse cursor icon */
+
+    color: black;
+    /* text color */
+    background-color: white;
+    border: 1px solid black;
+
+    border-radius: 2px;
+    /* round the border corners */
+    padding-top: 4px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 40px;
+
+
+    font-family: "Noticia Text", serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+select:focus {
+    outline: 0.5px solid black;
+    /* replace the focus outline removed with 'outline: none' */
+}
+
+select:hover {
+    outline: 0.5px solid black;
+    /* replace the focus outline removed with 'outline: none' */
+}
+
+select.optionStyle option {
+    background-color: white;
+}
+
+
+/* LOAD EDITION BUTTON STYLES */
+
+.loadEdition {
+        color: white;
+        background-color: rgb(12, 166, 12);
+            /* text color */
+            border: 1px solid black;
+        
+            border-radius: 2px;
+            /* round the border corners */
+            padding-top: 4px;
+            padding-bottom: 10px;
+            width: 150px;
+            height:40px;
+            cursor: pointer;
+                /* change the mouse cursor icon */
+        
+    font-family: "News Cycle", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+}
+
+.loadEdition:hover {
+    border: 2px solid black;
+}
+
+/* LOADED TEXT STYLES */
+
+span #changedText {
+    font-family: "News Cycle", sans-serif;
+}
+
+span #changedMonthText {
+    font-family: "News Cycle", sans-serif;
+}
+
+span #changedYearText {
+    font-family: "News Cycle", sans-serif;
+}
+
+.loadedTextChange {
+        font-family: "News Cycle", sans-serif;
+text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+    color: black;
+}
+
+/* BY YEAR BUTTON STYLES */
+
+.yearButton {
+            font-family: "News Cycle", sans-serif;
+    border: 1px solid #000000;
+    height: 35px;
+    width: 93px;
+    background: transparent;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0.5em;
+}

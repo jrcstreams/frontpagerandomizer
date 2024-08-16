@@ -1,1 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="index.js"></script>
+<script src="selector.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
 
+
+
+<h2 class="page-header" style="margin-bottom: 0em;">FRONT PAGE RANDOMIZER</h2>
+<p class="news-cycle-regular" style="text-align: center; width: 80%; margin: auto;" >This tool allows you to load a random edition of the New York Times from 1851 through 2024. Editions can be filtered by month, year and era.</p>
+
+        <div style="margin-top: 1em; margin-bottom: 0em; text-align: center;">
+            <select class="news-cycle-regular" style="margin-right: 1em; margin-top: 1em;" id="months" name="monthSelector" onchange="monthChange()">
+                <option value=''>Choose by Month 🗓️</option>
+                <option value=January>January</option>
+                <option value=February>February</option>
+                <option value=March>March</option>
+                <option value=April>April</option>
+                <option value=May>May</option>
+                <option value=June>June</option>
+                <option value=July>July</option>
+                <option value=August>August</option>
+                <option value=September>September</option>
+                <option value=October>October</option>
+                <option value=November>November</option>
+                <option value=December>December</option>
+             </select>
+            
+            <select class="news-cycle-regular"  style="margin-top: 1em"  id="years" name="yearSelector" onchange="yearChange()">
+                <option value=''>Choose by Year 🔎</option>
+                <option value=1851>1851</option>
+                <option value=1852>1852</option>
+                <option value=1853>1853</option>
+                <option value=1854>1854</option>
+                <option value=1855>1855</option>
+                <option value=1856>1856</option>
+                <option value=1857>YEAR</option>
+                <option value=1858>YEAR</option>
+                <option value=1859>YEAR</option>
+                <option value=1860>YEAR</option>
+                <option value=1861>YEAR</option>
+                <option value=1862>YEAR</option>
+                <option value=1863>YEAR</option>
+                <option value=1864>YEAR</option>
+                <option value=1865>YEAR</option>
+                <option value=1866>YEAR</option>
+                <option value=1867>YEAR</option>
+                <option value=1868>YEAR</option>
+                <option value=1869>YEAR</option>
+                <option value=1870>YEAR</option>
+                <option value=1871>YEAR</option>
+                <option value=1872>YEAR</option>
+                <option value=1873>YEAR</option>
+                <option value=1874>YEAR</option>
+                <option value=1875>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                <option value=YEAR>YEAR</option>
+                
+
+            </select>
+
+        </div>
+
+<p class="news-cycle-regular" id="changedText" style="text-align: center;"><span id="changedText"></span></p>
+    <p class="loadedTextChange"><span id="changedMonthText"></span> <span id="changedYearText"></span></p>
+
+            <div style="margin-top: -1.5em; margin-bottom: 1em; text-align: center;">
+                <button id="go" style="margin-top:1em" class="loadEdition" onclick="combinedGo()">
+                    Load Edition 🚀
+                </button>
+            </div>
+
+
+<hr style="margin-bottom: 3em; margin-top: 3em;">
+
+
+<! BY YEAR BUTTONS >
+
+<div style="margin-top: 3em; text-align: center;">
+
+    <button class='yearButton' id='byYearButton' onclick= yearGo(this.value)  value=1851>1851</button>
+    <button class='yearButton' id='byYearButton' onclick= yearGo(this.value)  value=1852>1852</button>
+    <button class='yearButton' id='byYearButton' onclick= yearGo(this.value)  value=1853>1853</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1854>1854</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1855>1855</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1856>1856</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1857>1857</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1858>1858</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1859>1859</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1860>1860</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1861>1861</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1862>1862</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1863>1863</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1864>1864</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1865>1865</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1866>1866</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1867>1867</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1868>1868</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1869>1869</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1870>1870</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1871>1871</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1872>1872</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1873>1873</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1874>1874</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1875>1875</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1876>1876</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1877>1877</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1878>1878</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1879>1879</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1880>1880</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1881>1881</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1882>1882</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1883>1883</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1884>1884</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1885>1885</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1886>1886</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1887>1887</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1888>1888</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1889>1889</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1890>1890</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1891>1891</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1892>1892</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1893>1893</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1894>1894</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1895>1895</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1896>1896</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1897>1897</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1898>1898</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1899>1899</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1900>1900</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1901>1901</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1902>1902</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1903>1903</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1904>1904</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1905>1905</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1906>1906</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1907>1907</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1908>1908</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1909>1909</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1910>1910</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1911>1911</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1912>1912</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1913>1913</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1914>1914</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1915>1915</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1916>1916</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1917>1917</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=1918>1918</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>
+    <button class='yearButton' id='byYearButton' onclick=yearGo(this.value) value=YEAR>YEAR</button>  
+</div>
+
+
+<hr style="margin-bottom: 3em; margin-top: 3em;">
+
+
+
+
+
+        </body>
+</html>
